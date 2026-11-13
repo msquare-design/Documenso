@@ -63,9 +63,10 @@ export const Header = ({ className, fullWidth = false, ...props }: HeaderProps) 
       >
         <Link
           to={getRootHref(params)}
-          className="hidden rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:inline"
+          className="hidden flex-col items-start rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:flex"
         >
           <BrandingLogo className="h-6 w-auto" />
+          <span className="mt-0.5 text-xs font-medium text-muted-foreground">M Square Design</span>
         </Link>
 
         <AppNavDesktop setIsCommandMenuOpen={setIsCommandMenuOpen} />
