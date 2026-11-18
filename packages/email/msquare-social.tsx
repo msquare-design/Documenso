@@ -19,7 +19,7 @@ export const MsquareSocial = () => {
   return (
     <Section style={{ marginBottom: '2rem' }}>
       {SOCIAL_LINKS.map((s) => (
-        <Link key={s.icon} href={s.href} target="_blank" style={{ display: 'inline-block', marginRight: '14px' }}>
+        <Link key={s.icon} href={s.href} target="_blank" style={{ display: 'inline-block', margin: '0 7px' }}>
           <Img src={`${base}/static/msquare/${s.icon}.png`} alt={s.name} width="24" height="24" style={{ display: 'block' }} />
         </Link>
       ))}
