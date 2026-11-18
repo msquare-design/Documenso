@@ -67,6 +67,11 @@ export const SUPPORTED_LANGUAGES: Record<string, SupportedLanguage> = {
     short: 'zh',
     full: msg`Chinese`,
   },
+  // M Square: Arabic (catalogue in translations/ar, right-to-left in root.tsx)
+  ar: {
+    short: 'ar',
+    full: msg`Arabic`,
+  },
 } satisfies Record<SupportedLanguageCodes, SupportedLanguage>;
 
 export const isValidLanguageCode = (code: unknown): code is SupportedLanguageCodes =>
