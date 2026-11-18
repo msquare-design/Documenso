@@ -2,6 +2,7 @@ import { Trans } from '@lingui/react/macro';
 import { Fragment } from 'react';
 
 import { Link, Section, Text } from '../components';
+import { MsquareSocial } from '../msquare-social';
 import { useBranding } from '../providers/branding';
 import { getSafeBrandingUrl } from '../utils/branding-url';
 
@@ -61,6 +62,8 @@ export const TemplateFooter = ({ isDocument = true, reportUrl }: TemplateFooterP
           </Link>
         </Text>
       )}
+
+      {branding.brandingEnabled && <MsquareSocial />}
 
       {!branding.brandingEnabled && (
         <Text className="my-8 text-muted-foreground text-sm">
