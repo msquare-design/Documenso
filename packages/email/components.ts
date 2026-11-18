@@ -15,5 +15,5 @@ export {
   render,
   Section,
   Tailwind,
-  Text,
 } from 'react-email';
+export { Text } from './msquare-text'; // M Square: wraps long file names

@@ -56,7 +56,7 @@ export const TemplateFooter = ({ isDocument = true, reportUrl }: TemplateFooterP
 
       {branding.brandingEnabled && safeBrandingUrl && (
         <Text className="my-8 text-muted-foreground text-sm">
-          <Link href={safeBrandingUrl} target="_blank">
+          <Link className="text-primary" href={safeBrandingUrl} target="_blank">
             {safeBrandingUrl}
           </Link>
         </Text>
