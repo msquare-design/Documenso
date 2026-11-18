@@ -25,6 +25,12 @@ Pushing to this repo does **not** change the live site. The server only runs the
 | Arabic language | `packages/lib/translations/ar/web.po` (new), `packages/lib/constants/locales.ts` (adds `'ar'`), `packages/lib/constants/i18n.ts` (adds the `ar` entry) |
 | Right-to-left layout for Arabic | `apps/remix/app/root.tsx` (`dir` on `<html>`) |
 | "M Square Design" under the header logo | `apps/remix/app/components/general/app-header.tsx` |
+| Emails: long file names wrap inside the border | `packages/email/msquare-text.tsx` (new), `packages/email/components.ts` (exports it as `Text`) |
+| Emails: website link in the brand colour | `packages/email/template-components/template-footer.tsx` (`className` on the link) |
+
+Not code (Documenso settings, stored in the database; old values saved in `/opt/documenso/migration/branding-before-20261118.txt`):
+brand colours (background `#EFEAE5`, text `#0D213F`, muted `#5F5750`, border `#8A8078`, button `#0D213F`), website
+`https://www.msquare.sa`, and the "sent using Documenso" line hidden (`hidePoweredBy` in the organisation's claim).
 | Our build and setup | `.github/workflows/msquare-image.yml`, `msquare/` |
 
 Rule: change upstream files as little as possible (a line or two), and put anything bigger in new files. That's what
